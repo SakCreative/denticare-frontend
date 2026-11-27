@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navyDark: #060d1f;
+  --color-navyPanel: #0c1833;
+  --color-neonBlue: #0280b8;
+  --color-neonGlow: #00b4ff;
+}
+
+body {
+  background: radial-gradient(circle at top left, #0e2247 0%, #060d1f 55%, #030712 100%);
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: rgba(12, 24, 51, 0.72);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(2, 128, 184, 0.28);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0280b8 0%, #00a8e8 100%);
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 18px rgba(2, 128, 184, 0.5);
+}
